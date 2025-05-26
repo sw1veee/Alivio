@@ -37,6 +37,7 @@ body{
     position: -webkit-sticky;
     top: 0;
     background-color: #fff;
+    z-index: 1000;
 }
 .nav__inner {
     display: flex;
@@ -134,8 +135,132 @@ body{
 
 @media screen and (max-width: 768px){
     .header {
-        background-image: none;
         min-height: auto;
         padding-bottom: 170px;
     }
+}
+
+@media screen and (max-width: 576px){
+    .header{
+        background-position: left;
+        padding: 150px 0;
+    }
+}
+
+/* Steps */
+
+.steps {
+}
+.steps__top {
+    display: flex;
+    margin-top: 163px;
+    justify-content: space-between;
+    margin-bottom: 79px;
+}
+
+.top__title {
+    max-width: 584px;
+}
+
+.top__title p{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.57em;
+    color: #424242;
+    
+}
+
+.top__title h2{
+    font-family: 'Georgia', serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.57em;
+    color: #01996d;
+}
+.text-p {
+    font-size: 20px;
+    line-height: 1.5em;
+    color: #424242;
+}
+
+.steps__top > p {
+    max-width: 649px;
+    padding-top: 60px;
+    letter-spacing: 0.005em;
+}
+
+.steps__bottom {
+    display: flex;
+    gap: 95px;
+}
+.bottom-steps-card {
+    max-width: 392px;
+    position: relative;
+    padding-top: 112px;    
+}
+
+.bottom-steps-card p{
+    margin-bottom: 59px;
+    letter-spacing: 0.01em;
+}
+
+.card-title {
+    font-family: 'Georgia', serif;
+    font-size: 30px;
+    color: #000;
+    margin-bottom: 59px;
+}
+
+
+
+
+.card-num {
+    position: absolute;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 150px;
+    font-weight: normal;
+    color: var(--main-color);
+    opacity: 0.2;
+    top: 0;
+}
+
+.bottom-steps-card:nth-child(1) .card-title{
+    padding-left: 88px;
+}
+
+.bottom-steps-card:nth-child(2) {
+    top: 286px;
+}
+
+.bottom-steps-card:nth-child(2) .card-title{
+    padding-left: 78px;
+}
+
+.bottom-steps-card:nth-child(2) p{
+    margin-bottom: 40px;
+}
+
+.bottom-steps-card:nth-child(2) {
+    top: 286px;
+}
+
+.bottom-steps-card:nth-child(3) {
+    top: 55px;
+}
+
+
+.bottom-steps-card:nth-child(3) .card-title{
+    padding-left: 129px;
+    margin-bottom: 51px;
+}
+
+.bottom-steps-card:nth-child(3) p{
+    margin-bottom: 47px;
+    width: 420px;
+    letter-spacing: 0.002em;
+}
+
+.bottom-steps-card:nth-child(3) img{
+    border-radius: 12px;
+    padding-left: 4px;
 }
