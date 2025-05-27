@@ -3,7 +3,7 @@
 
 /* Baze */
 :root{
-    --main-color: #01996D;
+    --main-color: #01996d;
 }
 
 html{
@@ -319,6 +319,92 @@ body{
     }
 }
 
-@media screen and (max-width: 1900px){
+/* Diary */
 
+.diary {
+}
+.diary__inner {
+    position: relative;
+    margin-top: 120px;
+    display: flex;
+    gap: 86px;
+}
+
+.diary__left {
+    margin-left: 60px;
+    background-image: url(../img/bg_person.png);
+    border-radius: 13px;
+    background-repeat: no-repeat;
+}
+
+
+.diary__left img{
+    padding-left: 98px;
+    padding-right: 112px;
+}
+
+.diary__card {
+    position: absolute;
+    border-radius: 4px;
+    width: 296px;
+    height: 293px;
+    background-color: #fff;
+    padding: 25px 55px;
+    text-align: center;
+    top: 354px;
+    -webkit-box-shadow: 0px 7px 55px 0px rgba(143, 148, 152, 0.2);
+    -moz-box-shadow: 0px 7px 55px 0px rgba(143, 148, 152, 0.2);
+    box-shadow: 0px 7px 55px 0px rgba(143, 148, 152, 0.2);
+
+
+}
+.diary__card-title {
+    font-size: 14px;
+}
+.line {
+    border: 0.75px solid #000;
+    width: 110px;
+    height: 0px;
+    margin: 10px auto 0;
+}
+.person-circle {
+    background-image: url(../img/bg_person.png);
+    border-radius: 50px;
+    margin-top: 12px;
+}
+.name {
+    padding-top: 9px;
+    font-size: 11px;
+}
+.diary-list-name {
+    font-family: 'Georgia', serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #000;
+    margin-top: 24px;
+}
+.list-content {
+    text-align: left;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.57em;
+    color: #000;
+}
+
+.list-content li{
+    padding-top: 20px;
+    margin-left: 15px;
+}
+
+.diary__right h2{
+    color: var(--main-color);
+    padding-top: 10px;
+}
+.diary__right p.text-p {
+    padding-top: 20px;
+    letter-spacing: 0.006em;
+}
+
+.diary__right .btn {
+    margin-top: 33px;
 }
