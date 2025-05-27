@@ -150,6 +150,7 @@ body{
 /* Steps */
 
 .steps {
+    margin-bottom: 252px;
 }
 .steps__top {
     display: flex;
@@ -163,20 +164,28 @@ body{
 }
 
 .top__title p{
+
+    color: #424242;
+}
+
+.description{
     font-weight: 600;
     font-size: 24px;
     line-height: 1.57em;
-    color: #424242;
-    
 }
 
 .top__title h2{
+
+    color: #01996d;
+}
+
+.text-h2{
     font-family: 'Georgia', serif;
     font-weight: 700;
     font-size: 50px;
     line-height: 1.57em;
-    color: #01996d;
 }
+
 .text-p {
     font-size: 20px;
     line-height: 1.5em;
@@ -263,4 +272,53 @@ body{
 .bottom-steps-card:nth-child(3) img{
     border-radius: 12px;
     padding-left: 4px;
+}
+
+/* About */
+
+.about {
+    background-color: #245852;
+}
+
+.about__inner {
+    display: flex;
+    color: #fff;
+    margin: 0 206px;
+    padding: 229px 0 175px;
+    gap: 31px;
+    justify-content: center;
+}
+
+.about__left {
+    margin-top: 81px;
+    max-width: 580px;
+}
+
+.about__left p{
+    padding-top: 33px;
+}
+
+.description {
+    font-size: 25px;
+}
+
+.about__left .btn{
+    margin-top: 57px;
+}
+.video {
+    border-radius: 17px;
+}
+
+@media screen and (max-width: 1900px){
+    .about__inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 100px 0;
+        gap: 60px;
+    }
+}
+
+@media screen and (max-width: 1900px){
+
 }
