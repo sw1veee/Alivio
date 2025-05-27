@@ -30,6 +30,23 @@ body{
     margin: 0 auto;
 }
 
+/*  */
+ul li a:hover, .footer ul li a:hover{
+    color: var(--main-color);
+}
+
+.btn:hover{
+    transform: scale(90%);
+    background-color: #027454;
+}
+
+.bottom-steps-card:hover{
+    transform: scale(110%);
+    transition: all 0.2s;
+}
+
+/*  */
+
 /* Navigation */
 
 .nav {
@@ -58,6 +75,7 @@ body{
     font-weight: 500;
     color: #292929;
     text-decoration: none;
+    transition: all 0.2s;
 }
 
 .nav_group {
@@ -76,6 +94,7 @@ body{
     font-size: 20px;
     color: #fff;
     padding: 20px 50px;
+    transition: 0.5s all;
 }
 .trial_btn {
     padding: 13px 50px;
@@ -85,26 +104,8 @@ body{
     border-bottom: 1px solid #e6e6e6;
 }
 
-@media screen and (max-width: 1400px){
-    .container{
-        padding: 0 15px;
-    }
-}
 
-@media screen and (max-width: 1200px){
-    .menu{
-        display: none;
-    }
-}
 
-@media screen and (max-width: 576px){
-    .auth_a{
-        margin-right: 7px;
-    }
-    .trial_btn{
-        padding: 10px 20px;
-    }
-}
 
 /* Header */
 .header {
@@ -133,19 +134,6 @@ body{
 .header_btn {
 }
 
-@media screen and (max-width: 768px){
-    .header {
-        min-height: auto;
-        padding-bottom: 170px;
-    }
-}
-
-@media screen and (max-width: 576px){
-    .header{
-        background-position: left;
-        padding: 150px 0;
-    }
-}
 
 /* Steps */
 
@@ -206,11 +194,13 @@ body{
     max-width: 392px;
     position: relative;
     padding-top: 112px;    
+    transition: all 0.2s;
 }
 
 .bottom-steps-card p{
     margin-bottom: 59px;
     letter-spacing: 0.01em;
+    transition: all 1s;
 }
 
 .card-title {
@@ -236,6 +226,21 @@ body{
 .bottom-steps-card:nth-child(1) .card-title{
     padding-left: 88px;
 }
+
+.bottom-steps-card .card-img {
+    height: 492px;
+    border-radius: 15px;
+}
+.bottom-steps-card:nth-child(1) .card-img {
+    background: url(../img/card_one.png) no-repeat center / cover;
+}
+.bottom-steps-card:nth-child(2) .card-img {
+    background: url(../img/card_two.png) no-repeat center / cover;
+}
+.bottom-steps-card:nth-child(3) .card-img {
+    background: url(../img/card_three.png) no-repeat center / cover;
+}
+
 
 .bottom-steps-card:nth-child(2) {
     top: 286px;
@@ -269,10 +274,6 @@ body{
     letter-spacing: 0.002em;
 }
 
-.bottom-steps-card:nth-child(3) img{
-    border-radius: 12px;
-    padding-left: 4px;
-}
 
 /* About */
 
@@ -307,17 +308,9 @@ body{
 }
 .video {
     border-radius: 17px;
+    max-width: 896px;
 }
 
-@media screen and (max-width: 1900px){
-    .about__inner {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 100px 0;
-        gap: 60px;
-    }
-}
 
 /* Diary */
 
@@ -433,4 +426,146 @@ body{
 
 .footer  img{
     margin-bottom: 70px;
+}
+
+/* Media */
+
+@media screen and (max-width: 1900px){
+    .about__inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 100px 0;
+        gap: 60px;
+    }
+}
+
+@media screen and (max-width: 1420px){
+    .container{
+        padding: 0 15px;
+    }
+    .diary__inner{
+        flex-direction: column;
+        align-items: center;
+        margin: 60px 120px 30px;
+    }
+    .diary__left img{
+        padding: 0 60px;
+    }
+    .diary__left{
+        margin: 0;
+    }
+    .steps{
+        margin: 70px 0;
+    }
+    
+    .steps__bottom{
+        flex-direction: column;
+        align-items:center ;
+        text-align: center;
+        gap: 20px;
+    }
+    .bottom-steps-card{
+        max-width: 530px;
+        top: 0;
+        align-items: center;
+    }
+    .bottom-steps-card:nth-child(1) {
+        top: 0;
+    }
+    .bottom-steps-card:nth-child(2) {
+        top: 0;
+        padding-top: 90px;
+    }
+    .bottom-steps-card:nth-child(3) {
+        top: 0;
+    }
+    .bottom-steps-card:nth-child(3) .card-img {
+        width: 530px;
+    }
+    .bottom-steps-card:nth-child(3) p {
+        width: 100%;
+    }
+    .bottom-steps-card:nth-child(1) .card-title{
+        padding: 0;
+    }
+    .bottom-steps-card:nth-child(2) .card-title{
+        padding: 0;
+    }
+    .bottom-steps-card:nth-child(3) .card-title{
+        padding: 0;
+    }
+    .card-num{
+        left: 0;
+    }
+    .steps__top{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 70px 0;
+    }
+    
+}
+
+@media screen and (max-width: 1200px){
+    .menu{
+        display: none;
+    }
+    .about__inner{
+        padding-top: 30px;
+        margin: 0 20px;
+    }
+}
+
+@media screen and (max-width: 996px){
+    video {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .header {
+        min-height: auto;
+        padding-bottom: 170px;
+    }
+    .diary__inner {
+        flex-direction: column;
+        align-items: center;
+        margin: 60px 60px 30px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .auth_a{
+        margin-right: 7px;
+    }
+    .trial_btn{
+        padding: 10px 20px;
+    }
+    .video{
+        width: 400px;
+    }
+    .diary__left img {
+        padding: 0;
+    }
+    .header{
+        background-position: left;
+        padding: 150px 0;
+    }
+
+    .bottom-steps-card:nth-child(1) {
+        max-width: 400px;
+
+    }
+    .bottom-steps-card:nth-child(2) {
+        max-width: 400px;
+
+
+    }
+    .bottom-steps-card:nth-child(3) {
+    }
+    .bottom-steps-card:nth-child(3) .card-img {
+        max-width: 400px;
+        margin: 0 auto;
+    }
 }
